@@ -1,0 +1,21 @@
+main{
+  padding: 1rem 0;
+  background-color: #f5f4f0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f4f0;
+  color: #2c2d42;
+}
+
+.font-style {
+  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+}
+
+button{
+  background-color: #fc3e04;
+  color: #f7fefe;
+}

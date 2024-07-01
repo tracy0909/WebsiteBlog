@@ -1,0 +1,41 @@
+<header class="font-style">
+  <div class="container">
+
+
+  <nav class="d-flex row justify-content-end navbar navbar-expand-lg">
+
+    <!--12網格其中四格-->
+    <div class="col-4 order-lg-2">
+    </div>
+
+    <!--主要 Brand-->
+    <div class="col-4 order-lg-1 text-center">
+      <a class="navbar-brand fs-1 header-style" href="#">My Blog.</a>
+    </div>
+
+
+    <!--漢堡菜單-->
+    <button class="col-3 order-lg-4 mx-3 navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <!--選單-->
+    <div class="col-4 order-lg-0 text-start text-lg-end navbar-collapse collapse header-style" id="navbarNav">
+      <ul class="navbar-nav fs-5">
+        <li class="nav-item">
+          <a class="nav-link" href="#" [ngClass]="{'header-orange': selectedLink === 'home', 'header-blue': selectedLink !== 'home'}" (click)="toggleColors('home')">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" [ngClass]="{'header-orange': selectedLink === 'archive', 'header-blue': selectedLink !== 'archive'}" (click)="toggleColors('archive')">Archive</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" [ngClass]="{'header-orange': selectedLink === 'about', 'header-blue': selectedLink !== 'about'}" (click)="toggleColors('about')">About me</a>
+        </li>
+      </ul>
+    </div>
+
+  </nav>
+
+  </div>
+</header>
