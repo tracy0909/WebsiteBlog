@@ -1,28 +1,25 @@
 <header class="font-style">
-  <div class="container">
+  <div class="container"> <!-- container: 固定寬度、水平居中的容器 -->
 
+  <nav class="row d-flex justify-content-end navbar navbar-expand-lg"> <!-- row: 建立一行網格系統 -->
 
-  <nav class="d-flex row justify-content-end navbar navbar-expand-lg">
-
-    <!--12網格其中四格-->
+    <!--12網格，桌機四格、手機三格-->
     <div class="col-lg-4 col-3 order-lg-2">
     </div>
 
-    <!--主要 Brand-->
+    <!--主要 Brand，桌機四格、手機六格-->
     <div class="col-lg-4 col-6 order-lg-1 text-center">
       <a class="navbar-brand fs-3 header-style" href="#">Chien's Blog.</a>
     </div>
 
-
-    <!--漢堡菜單-->
+    <!--手機版：漢堡菜單，手機兩格，多出一格留做左右margin-->
     <button class="col-2 mx-2 order-lg-4 navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-
-    <!--選單-->
+    <!--桌機版：選單，桌機四格-->
     <div class="col-lg-4 order-lg-0 text-start text-lg-end navbar-collapse collapse header-style" id="navbarNav">
-      <ul class="navbar-nav fs-6">
+      <ul class="navbar-nav fs-5">
         <li class="nav-item">
           <a class="nav-link" href="#" [ngClass]="{'header-orange': selectedLink === 'home', 'header-blue': selectedLink !== 'home'}" (click)="toggleColors('home')">Home</a>
         </li>
