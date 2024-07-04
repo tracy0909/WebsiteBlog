@@ -14,6 +14,9 @@ import { SubjectFrontendComponent } from './Component/index-page/main/card-artic
 import { SubjectBackendComponent } from './Component/index-page/main/card-article/subject-backend/subject-backend.component';
 import { ArchivePageComponent } from './Component/archive-page/archive-page.component';
 import { ArchiveMainComponent } from './Component/archive-page/archive-main/archive-main.component';
+import { SubjectLatestComponent } from './Component/index-page/main/card-article/subject-latest/subject-latest.component';
+import { TagComponent } from './Component/index-page/main/tag/tag.component';
+import { TagJavascriptComponent } from './Component/index-page/main/tag/tag-javascript/tag-javascript.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { ArchiveMainComponent } from './Component/archive-page/archive-main/arch
     SubjectFrontendComponent,
     SubjectBackendComponent,
     ArchivePageComponent,
-    ArchiveMainComponent
+    ArchiveMainComponent,
+    SubjectLatestComponent,
+    TagComponent,
+    TagJavascriptComponent
   ],
   imports: [
     BrowserModule,
