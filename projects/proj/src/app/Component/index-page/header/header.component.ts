@@ -6,12 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  selectedLink: string = 'home';
-
-  selectLink(link: string) {
-    this.selectedLink = link;
-  }
-  toggleColors(link: string){
-    this.selectedLink = link;
-  }
 }

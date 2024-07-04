@@ -1,0 +1,12 @@
+main {
+  background-color: #f5f4f0;
+  color: #2c2d42;
+}
+
+.font-style {
+  font-family: Optima, Segoe, "Segoe UI", Calibri, Candara, Arial, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+}

@@ -22,13 +22,13 @@
     <div class="col-lg-4 order-lg-0 collapse navbar-collapse header-style" id="navbarNav"> <!--collapse: 隱藏/顯示某個HTML元素。通常與JavaScript一起使用，當某觸發事件發生時，會切換元素的顯示狀態--> <!--navbar-collaps: 專門為導覽列navbar設計的Bootstrap class。包裹導覽列的內容讓小屏幕上能折疊在大屏幕上展開--> <!--navbarNav: 設置導覽列的樣式-->
       <ul class="navbar-nav fs-5"> <!--navbar-nav: 設置導覽列的樣式 (欄高加長)-->
         <li class="nav-item"> <!--nav-item: 設置導覽列的每個項目-->
-          <a class="nav-link" href="#" [ngClass]="{'header-orange': selectedLink === 'home', 'header-blue': selectedLink !== 'home'}" (click)="toggleColors('home')">Home</a> <!--nav-link: 設置導覽列鏈接樣式 (少掉底線)-->
+          <a class="nav-link" [routerLink]="['/home']" routerLinkActive="header-orange" >Home</a> <!--nav-link: 設置導覽列鏈接樣式 (少掉底線)-->
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" [ngClass]="{'header-orange': selectedLink === 'archive', 'header-blue': selectedLink !== 'archive'}" (click)="toggleColors('archive')">Archive</a>
+          <a class="nav-link" [routerLink]="['/archive']" routerLinkActive="header-orange">Archive</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" [ngClass]="{'header-orange': selectedLink === 'about', 'header-blue': selectedLink !== 'about'}" (click)="toggleColors('about')">About me</a>
+          <a class="nav-link" [routerLink]="['/aboutMe']" routerLinkActive="header-orange">About me</a>
         </li>
       </ul>
     </div>
