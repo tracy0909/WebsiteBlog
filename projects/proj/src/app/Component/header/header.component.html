@@ -1,7 +1,7 @@
 <header class="font-style">
-  <div class="container"> <!-- container: 固定寬度、水平居中的容器 -->
+  <div class="container"> <!--container: 固定寬度、水平居中的容器 -->
 
-  <nav class="row d-flex justify-content-end navbar navbar-expand-lg"> <!-- row: 建立一行網格系統 -->
+  <nav class="row navbar navbar-expand-lg"> <!--row: 建立一行網格系統 --> <!--navbar: 導覽列類 (拿掉無導覽列功能, 漢堡消失, 延展還在) --> <!--navbar-expand-lg: 大螢幕顯示完整導覽列 (拿掉後無延展依然漢堡圖) -->
 
     <!--12網格，桌機四格、手機三格-->
     <div class="col-lg-4 col-3 order-lg-2">
@@ -14,14 +14,15 @@
 
     <!--手機版：漢堡菜單，手機兩格，多出一格留做左右margin-->
     <button class="col-2 mx-2 order-lg-4 navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <!--navbar-toggler: 導覽列切換按鈕的類 (拿掉變漢堡黑色框框, 可延展)--> <!--這裡每個皆為必須存在--> <!--type="button": 按鈕的類型為普通按鈕--> <!--data-bs-toggle="collapse": 指示按鈕用於觸發折疊行為-->  <!--data-bs-target="#navbarNav": 指定按鈕觸發折疊目標為 #navbarNav，其為導覽列的折疊容器--> <!--aria-controls="navbarNav": 訪問性屬性，指定按鈕控制的折疊內容區域ID，讓螢幕助讀器等輔助工具可以理解操作--> <!--aria-expanded="false": 訪問性屬性，表示折疊區域是否展開，這裡折疊內容設置為未展開--> <!--aria-label="Toggle navigation: 訪問性屬性，提供輔助技術工具使用的按鈕描述，表示按鈕作用是切換導覽列的顯示狀態-->
+      <span class="navbar-toggler-icon"></span> <!--navbar-toggler-icon: (拿掉無漢堡圖)-->
     </button>
 
     <!--桌機版：選單，桌機四格-->
-    <div class="col-lg-4 order-lg-0 text-start text-lg-end navbar-collapse collapse header-style" id="navbarNav">
-      <ul class="navbar-nav fs-5">
-        <li class="nav-item">
-          <a class="nav-link" href="#" [ngClass]="{'header-orange': selectedLink === 'home', 'header-blue': selectedLink !== 'home'}" (click)="toggleColors('home')">Home</a>
+    <div class="col-lg-4 order-lg-0 collapse navbar-collapse header-style" id="navbarNav"> <!--collapse: 隱藏/顯示某個HTML元素。通常與JavaScript一起使用，當某觸發事件發生時，會切換元素的顯示狀態--> <!--navbar-collaps: 專門為導覽列navbar設計的Bootstrap class。包裹導覽列的內容讓小屏幕上能折疊在大屏幕上展開--> <!--navbarNav: 設置導覽列的樣式-->
+      <ul class="navbar-nav fs-5"> <!--navbar-nav: 設置導覽列的樣式 (欄高加長)-->
+        <li class="nav-item"> <!--nav-item: 設置導覽列的每個項目-->
+          <a class="nav-link" href="#" [ngClass]="{'header-orange': selectedLink === 'home', 'header-blue': selectedLink !== 'home'}" (click)="toggleColors('home')">Home</a> <!--nav-link: 設置導覽列鏈接樣式 (少掉底線)-->
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#" [ngClass]="{'header-orange': selectedLink === 'archive', 'header-blue': selectedLink !== 'archive'}" (click)="toggleColors('archive')">Archive</a>

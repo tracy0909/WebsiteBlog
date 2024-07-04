@@ -17,11 +17,6 @@ main {
   text-decoration-thickness: 8px;
 }
 
-button {
-  background-color: #fc3e04;
-  color: #f7fefe;
-}
-
 h2 {
   font-weight: 650;
 }
@@ -44,4 +39,24 @@ h2 {
 
 svg {
   border-radius: 2px;
+}
+
+.btn-learn-more {
+  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+  padding: 5px 60px; /* 上下內邊距為 5px，左右內邊距為 60px */
+  margin: 15px 0; /* 上下外邊距為 15px，左右外邊距為 0 */
+  border: 3px solid #fa5a2d; /* 邊框寬度為 3px，顏色為 #fa5a2d */
+  border-radius: 25px; /* 邊框圓角半徑為 25px */
+  color: #fa5a2d;
+  background-color: transparent; /* 背景透明 */
+  font-size: 16px; /* 字體大小為 16px */
+  cursor: pointer; /* 滑鼠懸停時顯示手型游標 */
+  transition: all 0.3s ease; /* 所有屬性平滑過渡時間為 0.3 秒 */
+  font-weight: 700; /* 字體粗細為粗體 */
+}
+
+.btn-learn-more:hover {
+  background-color: rgba(253, 84, 32, 0.9); /* 滑鼠懸停時背景顏色為帶有 0.9 透明度的 rgba(253, 84, 32) */
+  color: #ffffff; /* 滑鼠懸停時文字顏色為白色 */
+  border-color: transparent; /* 滑鼠懸停時邊框顏色透明 */
 }
